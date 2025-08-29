@@ -3,6 +3,7 @@
 - python3 -m venv venv
 - source venv/bin/activate
 - pip install -r requirements.txt
+- deactivate
 - python3 bot.py
 
 SERVICE :
@@ -30,3 +31,11 @@ RestartSec=5s
 
 [Install]
 WantedBy=multi-user.target
+
+
+
+
+- sudo systemctl daemon-reload
+- sudo systemctl start myxlbot
+- sudo systemctl enable myxlbot
+- sudo journalctl -u myxlbot.service -f
