@@ -1,4 +1,4 @@
-- 
+ 
 - apt install python3.12-venv -y
 - python3 -m venv venv
 - source venv/bin/activate
@@ -8,6 +8,7 @@
 
 SERVICE :
 
+```
 [Unit]
 Description=Telegram Bot MyXL
 After=network.target
@@ -32,7 +33,7 @@ RestartSec=5s
 [Install]
 WantedBy=multi-user.target
 
-
+```
 
 
 - sudo systemctl daemon-reload
